@@ -1,39 +1,38 @@
 name: Update Profile Views
 
 on:
+  schedule:
+    - cron: "0 * * * *" # Runs every hour
   push:
     branches:
       - main
   pull_request:
     branches:
       - main
-  workflow_dispatch:
-    # This triggers the action manually as well
+  workflow_dispatch: # Trigger manually as well
+
 jobs:
   update-views:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
-      - name: Increment view count
+      - name: Fetch Profile Data from GitHub
         run: |
-          # Read current views count
-          count=$(jq .views views.json)
-          # Increment the views count by 1
-          new_count=$((count + 1))
-          # Update the view count in the file
-          jq ".views = $new_count" views.json > tmp.json && mv tmp.json views.json
-          # Commit the updated file
-          git config user.name "GitHub Actions"
-          git config user.email "actions@github.com"
-          git add views.json
-          git commit -m "Update views count"
-          git push
+          # Get the number of followers (or profile views) from the GitHub API
+          PROFILE_VIEWS=$(curl -s https://api.github.com/users/hxnain619 | jq .followers)
 
-      - name: Upload view count to shields.io
-        run: |
-          # Generate dynamic badge URL
-          badge_url="https://img.shields.io/badge/Profile%20views-${new_count}-blue?style=for-the-badge"
+          # Generate the dynamic badge URL
+          badge_url="https://img.shields.io/badge/Profile%20views-${PROFILE_VIEWS}-blue?style=for-the-badge"
           echo "Dynamic Badge URL: $badge_url"
-        # Optional: Create a release or update a file with this badge URL for later use
+
+          # Replace the placeholder {{ dynamic_count }} in README.md with the actual value
+          sed -i "s/{{ dynamic_count }}/$PROFILE_VIEWS/g" README.md
+
+          # Commit the changes to README.md with updated views count
+          git config --local user.name 'GitHub Actions'
+          git config --local user.email 'actions@github.com'
+          git add README.md
+          git commit -m "Update profile views to $PROFILE_VIEWS"
+          git push
