@@ -1,0 +1,39 @@
+name: Update Profile Views
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+    # This triggers the action manually as well
+jobs:
+  update-views:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Increment view count
+        run: |
+          # Read current views count
+          count=$(jq .views views.json)
+          # Increment the views count by 1
+          new_count=$((count + 1))
+          # Update the view count in the file
+          jq ".views = $new_count" views.json > tmp.json && mv tmp.json views.json
+          # Commit the updated file
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add views.json
+          git commit -m "Update views count"
+          git push
+
+      - name: Upload view count to shields.io
+        run: |
+          # Generate dynamic badge URL
+          badge_url="https://img.shields.io/badge/Profile%20views-${new_count}-blue?style=for-the-badge"
+          echo "Dynamic Badge URL: $badge_url"
+        # Optional: Create a release or update a file with this badge URL for later use
