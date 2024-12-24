@@ -14,25 +14,26 @@ on:
 jobs:
   update-views:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # Grants write access to the repository content
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      - name: Install jq
+        run: sudo apt-get install -y jq
+
       - name: Fetch Profile Data from GitHub
         run: |
-          # Get the number of followers (or profile views) from the GitHub API
           PROFILE_VIEWS=$(curl -s https://api.github.com/users/hxnain619 | jq .followers)
+          sed -i.bak "s/{{ dynamic_count }}/$PROFILE_VIEWS/g" README.md && rm README.md.bak
 
-          # Generate the dynamic badge URL
-          badge_url="https://img.shields.io/badge/Profile%20views-${PROFILE_VIEWS}-blue?style=for-the-badge"
-          echo "Dynamic Badge URL: $badge_url"
-
-          # Replace the placeholder {{ dynamic_count }} in README.md with the actual value
-          sed -i "s/{{ dynamic_count }}/$PROFILE_VIEWS/g" README.md
-
-          # Commit the changes to README.md with updated views count
+      - name: Commit and Push Changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
           git config --local user.name 'GitHub Actions'
           git config --local user.email 'actions@github.com'
           git add README.md
-          git commit -m "Update profile views to $PROFILE_VIEWS"
+          git commit -m "Update profile views to $PROFILE_VIEWS" || echo "No changes to commit"
           git push
