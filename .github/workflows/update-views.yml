@@ -28,7 +28,6 @@ jobs:
           PROFILE_VIEWS=$(curl -s https://api.github.com/users/hxnain619 | jq .followers)
           echo "PROFILE_VIEWS: $PROFILE_VIEWS" # Debug step
           sed -i.bak "s/{{ dynamic_count }}/$PROFILE_VIEWS/g" README.md && rm README.md.bak
-          echo "Last updated: $(date)" >> README.md # Force an update
 
       - name: Commit and Push Changes
         env:
