@@ -26,7 +26,9 @@ jobs:
       - name: Fetch Profile Data from GitHub
         run: |
           PROFILE_VIEWS=$(curl -s https://api.github.com/users/hxnain619 | jq .followers)
+          echo "PROFILE_VIEWS: $PROFILE_VIEWS" # Debug step
           sed -i.bak "s/{{ dynamic_count }}/$PROFILE_VIEWS/g" README.md && rm README.md.bak
+          echo "Last updated: $(date)" >> README.md # Force an update
 
       - name: Commit and Push Changes
         env:
@@ -35,5 +37,5 @@ jobs:
           git config --local user.name 'GitHub Actions'
           git config --local user.email 'actions@github.com'
           git add README.md
-          git commit -m "Update profile views to $PROFILE_VIEWS" || echo "No changes to commit"
-          git push
+          git diff --cached --exit-code || git commit -m "Update profile views to $PROFILE_VIEWS"
+          git push || echo "No changes to push"
