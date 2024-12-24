@@ -9,7 +9,7 @@
 
 - 📫 How to reach me **hxan619@gmail.com**
 
-- 📄 Know about my experiences [upwork.com/fl/hxnain610](upwork.com/fl/hxnain610)
+- 📄 Know about my experiences [Linkedin](linkedin/com/in/hxnain610)
 
 <br>
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com?user=hxnain619&theme=dark&hide_border=true&card_width=950&background=45%2C951F44%2C9872EB&dates=EBEBEB&ring=9872EBB7&fire=9872EBEA&currStreakLabel=9872EBFC" alt="hxnain619" /></p>
