@@ -5,7 +5,7 @@
 
 - 🌱 I’m currently learning **Next.js**
 
-- 👨‍💻 All of my projects are available at [Portfolio](upwork.com/fl/hxnain619)
+- 👨‍💻 All of my projects are available at [Portfolio](https://bento.me/hxnain619)
 
 - 📫 How to reach me **hxan619@gmail.com**
 
