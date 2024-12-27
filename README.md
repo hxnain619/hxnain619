@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Hasnain Tariq</h1>
 <h3 align="center">A passionate software engineer from Pakistan</h3>
 
-<p align="left"> <img src="https://img.shields.io/badge/Profile%20views-{{ dynamic_count }}-purple?style=for-the-badge" alt="hxnain619" /> </p> 
+<p align="left"> <img src="https://img.shields.io/badge/Profile%20views-17-purple?style=for-the-badge" alt="hxnain619" /> </p> 
 
 - 🌱 I’m currently learning **Next.js**
 
