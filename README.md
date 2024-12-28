@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Hasnain Tariq</h1>
 <h3 align="center">A passionate software engineer from Pakistan</h3>
 
-[![](https://visitcount.itsvg.in/api?id=hxnain619&label=Profile%20Views&color=10&icon=0&pretty=true)](https://visitcount.itsvg.in)
+![Profile Views](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/hxnain619/hxnain619/main/profile-views.json)
 
 - 🌱 I’m currently learning **Web architecture models**
 
