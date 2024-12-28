@@ -13,21 +13,16 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Fetch Repository Traffic Data
-        id: fetch-traffic
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          # Replace 'hxnain619/hxnain619' with your username/repository name
-          RESPONSE=$(curl -s -H "Authorization: token $GITHUB_TOKEN" \
-            https://api.github.com/repos/hxnain619/hxnain619/traffic/views)
-          TOTAL_VIEWS=$(echo $RESPONSE | jq '.count')
-
+          RESPONSE=$(curl -s -H "Authorization: token ${{ secrets.GH_VIEWS }}" \
+            https://api.github.com/repos/YOUR_USERNAME/YOUR_REPOSITORY/traffic/views)
+          TOTAL_VIEWS=$(echo $RESPONSE | jq '.count // 0')
           echo "TOTAL_VIEWS=$TOTAL_VIEWS" >> $GITHUB_ENV
 
       - name: Update Badge JSON
         run: |
           jq --arg views "$TOTAL_VIEWS" \
-            '.message = $views | .color = "#951F44"' profile-views.json > temp.json && mv temp.json profile-views.json
+            '.message = ($views // "0") | .color = "#951F44"' profile-views.json > temp.json && mv temp.json profile-views.json
 
       - name: Commit and Push Changes
         env:
