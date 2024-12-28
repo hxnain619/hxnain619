@@ -14,7 +14,7 @@ jobs:
 
       - name: Fetch Repository Traffic Data
         run: |
-          RESPONSE=$(curl -s -H "Authorization: token ${{ secrets.GH_VIEWS }}" \
+          RESPONSE=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
             https://api.github.com/repos/hxnain619/hxnain619/traffic/views)
 
           echo "API Response: $RESPONSE"
