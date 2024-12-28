@@ -15,7 +15,7 @@ jobs:
       - name: Fetch Repository Traffic Data
         run: |
           RESPONSE=$(curl -s -H "Authorization: token ${{ secrets.GH_VIEWS }}" \
-            https://api.github.com/repos/YOUR_USERNAME/YOUR_REPOSITORY/traffic/views)
+            https://api.github.com/repos/hxnain619/hxnain619/traffic/views)
           TOTAL_VIEWS=$(echo $RESPONSE | jq '.count // 0')
           echo "TOTAL_VIEWS=$TOTAL_VIEWS" >> $GITHUB_ENV
 
