@@ -3,7 +3,7 @@
 
 <p align="left"> <img src="https://img.shields.io/badge/Profile%20views-17-purple?style=for-the-badge" alt="hxnain619" /> </p> 
 
-- 🌱 I’m currently learning **Next.js**
+- 🌱 I’m currently learning **Web architecture models**
 
 - 👨‍💻 All of my projects are available at [Portfolio](https://bento.me/hxnain619)
 
