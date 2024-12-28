@@ -16,7 +16,15 @@ jobs:
         run: |
           RESPONSE=$(curl -s -H "Authorization: token ${{ secrets.GH_VIEWS }}" \
             https://api.github.com/repos/hxnain619/hxnain619/traffic/views)
+
+          echo "API Response: $RESPONSE"
+
           TOTAL_VIEWS=$(echo $RESPONSE | jq '.count // 0')
+
+          echo "Total Views: $TOTAL_VIEWS"
+          if [ "$TOTAL_VIEWS" == "null" ]; then
+            TOTAL_VIEWS=0
+          fi
           echo "TOTAL_VIEWS=$TOTAL_VIEWS" >> $GITHUB_ENV
 
       - name: Update Badge JSON
