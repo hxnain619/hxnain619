@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Hasnain Tariq</h1>
 <h3 align="center">A passionate software engineer from Pakistan</h3>
 
-<p align="left"> <img src="https://img.shields.io/badge/Profile%20views-17-purple?style=for-the-badge" alt="hxnain619" /> </p> 
+[![](https://visitcount.itsvg.in/api?id=hxnain619&label=Profile%20Views&color=10&icon=0&pretty=true)](https://visitcount.itsvg.in)
 
 - 🌱 I’m currently learning **Web architecture models**
 
