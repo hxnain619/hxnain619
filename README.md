@@ -3,17 +3,23 @@
 
 ![Profile Views](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/hxnain619/hxnain619/main/profile-views.json)
 
-- 🌱 I’m currently learning **Web architecture models**
-
-- 👨‍💻 All of my projects are available at [Portfolio](https://bento.me/hxnain619)
-
-- 📫 How to reach me **hxan619@gmail.com**
-
-- 📄 Know about my experiences [Linkedin](linkedin/com/in/hxnain610)
+🌱 Currently learning Web Architecture Models <br>
+🚀 Passionate about building scalable and efficient web applications using modern frameworks and technologies like React, Node.js, and TypeScript. <br>
+👨‍💻 I specialize in front-end development and enjoy creating intuitive, user-friendly interfaces. <br>
+🔧 Experienced in working with Tailwind CSS, Material UI, SCSS, and Redux Toolkit for state management. <br>
+🌍 Open to collaborating on exciting projects and learning new tools to enhance the development process. <br>
+🎯 Focused on delivering high-quality, maintainable code with a strong emphasis on performance and accessibility. <br>
+<br><br>
+👨‍💻 Check out my work: [Portfolio](https://bento.me/hxnain619) <br>
+📫 Feel free to reach out: **hxan619@gmail.com** <br>
+📄 View my professional experiences: [![LinkedIn](https://img.shields.io/badge/Linkedin-%230A0A0A.svg?style=for-the-badge&logo=dev.to&logoColor=white)](https://linkedin/com/in/hxnain610) <br>
 
 <br>
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com?user=hxnain619&theme=dark&hide_border=true&card_width=950&background=45%2C951F44%2C9872EB&dates=EBEBEB&ring=9872EBB7&fire=9872EBEA&currStreakLabel=9872EBFC" alt="hxnain619" /></p>
+
+<!-- link is not working will add later -->
+<!-- <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com?user=hxnain619&theme=dark&hide_border=true&card_width=950&background=45%2C951F44%2C9872EB&dates=EBEBEB&ring=9872EBB7&fire=9872EBEA&currStreakLabel=9872EBFC" alt="hxnain619" /></p>
 <br>
+ -->
 
 <h3 align="left">Languages and Tools:</h3>
 <p align="left">
