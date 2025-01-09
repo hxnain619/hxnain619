@@ -3,17 +3,13 @@
 
 ![Profile Views](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/hxnain619/hxnain619/main/profile-views.json)
 
-🌱 Currently learning Web Architecture Models <br>
-🚀 Passionate about building scalable and efficient web applications using modern frameworks and technologies like React, Node.js, and TypeScript. <br>
-👨‍💻 I specialize in front-end development and enjoy creating intuitive, user-friendly interfaces. <br>
-🔧 Experienced in working with Tailwind CSS, Material UI, SCSS, and Redux Toolkit for state management. <br>
+🌱 Currently learning **Web Architecture Models**.Passionate about building scalable and efficient web applications using modern frameworks and technologies like React, Node.js, and TypeScript. <br>
+🚀 I specialize in front-end development and enjoy creating intuitive, user-friendly interfaces. Experienced in working with Tailwind CSS, Material UI, SCSS, and Redux Toolkit for state management. <br>
 🌍 Open to collaborating on exciting projects and learning new tools to enhance the development process. <br>
 🎯 Focused on delivering high-quality, maintainable code with a strong emphasis on performance and accessibility. <br>
 <br><br>
-👨‍💻 Check out my work: [Portfolio](https://bento.me/hxnain619) <br>
-📫 Feel free to reach out: **hxan619@gmail.com** <br>
-📄 View my professional experiences: [![LinkedIn](https://img.shields.io/badge/Linkedin-%230A0A0A.svg?style=for-the-badge&logo=dev.to&logoColor=white)](https://linkedin/com/in/hxnain610) <br>
-
+👨‍💻 Check out my work => [![Portfolio](https://img.shields.io/badge/Portfolio-%23952752.svg?style=for-the-badge&logo=portfolio&logoColor=white)](https://bento.me/hxnain610) <br>
+📫 Feel free to reach out => **hxan619@gmail.com** <br>
 <br>
 
 <!-- link is not working will add later -->
