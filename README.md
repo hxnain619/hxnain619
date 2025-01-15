@@ -3,7 +3,7 @@
 
 ![Profile Views](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/hxnain619/hxnain619/main/profile-views.json)
 
-🌱 Currently learning **Web Architecture Models**.Passionate about building scalable and efficient web applications using modern frameworks and technologies like React, Node.js, and TypeScript. <br>
+🌱 Currently learning **Web Architecture Models**.Passionate about building scalable and efficient web applications using modern frameworks and technologies like React, Next.js, Expres.js Node.js, and TypeScript. <br>
 🚀 I specialize in front-end development and enjoy creating intuitive, user-friendly interfaces. Experienced in working with Tailwind CSS, Material UI, SCSS, and Redux Toolkit for state management. <br>
 🌍 Open to collaborating on exciting projects and learning new tools to enhance the development process. <br>
 🎯 Focused on delivering high-quality, maintainable code with a strong emphasis on performance and accessibility. <br>
