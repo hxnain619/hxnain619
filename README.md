@@ -8,8 +8,12 @@
 🌍 Open to collaborating on exciting projects and learning new tools to enhance the development process. <br>
 🎯 Focused on delivering high-quality, maintainable code with a strong emphasis on performance and accessibility. <br>
 <br><br>
-👨‍💻 Check out my work => [![Portfolio](https://img.shields.io/badge/Portfolio-%23952752.svg?style=for-the-badge&logo=portfolio&logoColor=white)](https://bento.me/hxnain610) <br>
-📫 Feel free to reach out => **hxan619@gmail.com** <br>
+
+Want to Reach out?
+<br> 
+<br> 
+🫴 [![Portfolio](https://img.shields.io/badge/Portfolio-%23952752.svg?style=for-the-badge&logo=portfolio&logoColor=white)](https://bento.me/hxnain610)
+[![Email](https://img.shields.io/badge/Email-%23952752.svg?style=for-the-badge&logo=portfolio&logoColor=white)](mailto:hxan619@gmail.com)
 <br>
 
 <!-- link is not working will add later -->
